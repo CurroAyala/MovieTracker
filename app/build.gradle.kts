@@ -4,9 +4,7 @@ plugins {
 
 android {
     namespace = "com.curro.movietracker"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.curro.movietracker"
@@ -32,8 +30,8 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
-    buildFeatures {
-        viewBinding = true
+    viewBinding {
+        enable = true
     }
 
 }
