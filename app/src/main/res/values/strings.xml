@@ -25,4 +25,8 @@
     <string name="movie_saved">Movie saved</string>
     <string name="movie_updated">Movie updated</string>
 
+    <string name="change_language">Change language</string>
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+
 </resources>
