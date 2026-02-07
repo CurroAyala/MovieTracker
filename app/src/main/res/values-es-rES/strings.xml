@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Movie Tracker</string>
+    <string name="home_title">Inicio</string>
+    <string name="add_edit_movie">Detalles de la película</string>
+
+    <string name="btn_save">Guardar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="menu_settings">Ajustes</string>
+    <string name="click_on">Click en:</string>
+
+    <string name="list_title">Películas</string>
+    <string name="empty_list">No hay películas todavía. ¡Añade una!</string>
+    <string name="msg_add_movie">Añade una nueva película</string>
+
+    <string name="hint_original_title">Título original</string>
+    <string name="hint_spanish_title">Título en español</string>
+    <string name="hint_director">Director</string>
+    <string name="hint_year">Año</string>
+    <string name="error_required_field">Este campo es obligatorio</string>
+
+    <string name="prefix_director">Dir:</string>
+
+    <string name="invalid_year">Año inválido</string>
+
+    <string name="movie_saved">Película guardada</string>
+    <string name="movie_updated">Película actualizada</string>
+
+    <string name="change_language">Cambiar idioma</string>
+    <string name="spanish">Español</string>
+    <string name="english">Inglés</string>
+
+</resources>
