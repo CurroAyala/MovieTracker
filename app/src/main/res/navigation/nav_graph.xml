@@ -21,4 +21,10 @@
         android:label="@string/add_edit_movie"
         tools:layout="@layout/fragment_add_edit" />
 
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.curro.movietracker.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
 </navigation>
