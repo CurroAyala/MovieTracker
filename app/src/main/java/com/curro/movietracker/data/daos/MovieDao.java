@@ -27,6 +27,6 @@ public interface MovieDao {
     void updateMovie(MovieEntity movie);
 
     @Delete
-    void deleteMovieById(int id);
+    void deleteMovie(MovieEntity movie);
 
 }
