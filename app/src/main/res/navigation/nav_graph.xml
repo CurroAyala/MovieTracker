@@ -3,12 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/listFragment">
 
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.curro.movietracker.ui.fragments.HomeFragment"
-        android:label="Inicio"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/listFragment"
+        android:name="com.curro.movietracker.ui.list.ListFragment"
+        android:label="@string/home_title"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_list_to_add_edit"
+            app:destination="@id/addEditFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditFragment"
+        android:name="com.curro.movietracker.ui.add.AddEditFragment"
+        android:label="@string/add_edit_movie"
+        tools:layout="@layout/fragment_add_edit" />
 
 </navigation>
