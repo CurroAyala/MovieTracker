@@ -49,6 +49,10 @@ public class AddEditFragment extends Fragment {
                 binding.etYear.setText(String.valueOf(currentMovie.getYear()));
             }
             binding.btnSave.setText(R.string.btn_save);
+            binding.btnDelete.setVisibility(View.VISIBLE);
+            binding.btnDelete.setOnClickListener(v -> deleteMovie());
+        } else {
+            binding.btnDelete.setVisibility(View.GONE);
         }
 
         binding.btnSave.setOnClickListener(v -> saveMovie());
@@ -92,6 +96,14 @@ public class AddEditFragment extends Fragment {
         }
 
         Navigation.findNavController(getView()).popBackStack();
+    }
+
+    private void deleteMovie() {
+        if (currentMovie != null) {
+            movieViewModel.delete(currentMovie);
+            Toast.makeText(getContext(), getString(R.string.msg_delete_movie), Toast.LENGTH_SHORT).show();
+            Navigation.findNavController(getView()).popBackStack();
+        }
     }
 
 }
