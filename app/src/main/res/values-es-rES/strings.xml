@@ -30,5 +30,13 @@
     <string name="change_language">Cambiar idioma</string>
     <string name="spanish">Español</string>
     <string name="english">Inglés</string>
+    <string name="export_import_title">Exportar o importar películas</string>
+    <string name="btn_export">Exportar a CSV</string>
+    <string name="btn_import">Importar desde CSV</string>
+
+    <string name="import_success">Importadas: %d películas</string>
+    <string name="import_error">Error al importar: %s</string>
+    <string name="export_success">Exportación completada con éxito</string>
+    <string name="export_error">Error al exportar: %s</string>
 
 </resources>

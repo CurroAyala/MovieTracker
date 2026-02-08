@@ -1,6 +1,11 @@
 package com.curro.movietracker.ui.viewmodels;
 
 import android.app.Application;
+import android.content.ContentResolver;
+import android.net.Uri;
+import android.os.Handler;
+import android.os.Looper;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
@@ -36,6 +41,42 @@ public class MovieViewModel extends AndroidViewModel {
 
     public void update(Movie movie) {
         repository.update(movie);
+    }
+
+    public void importCsv(Uri uri, ContentResolver contentResolver) {
+        repository.importMoviesFromCsv(uri, contentResolver, new MovieRepository.OnCsvOperationListener() {
+            @Override
+            public void onSuccess(String message) {
+                new Handler(Looper.getMainLooper()).post(() ->
+                        Toast.makeText(getApplication(), message, Toast.LENGTH_SHORT).show()
+                );
+            }
+
+            @Override
+            public void onError(String error) {
+                new Handler(Looper.getMainLooper()).post(() ->
+                        Toast.makeText(getApplication(), error, Toast.LENGTH_LONG).show()
+                );
+            }
+        });
+    }
+
+    public void exportCsv(Uri uri, ContentResolver contentResolver) {
+        repository.exportMoviesToCsv(uri, contentResolver, new MovieRepository.OnCsvOperationListener() {
+            @Override
+            public void onSuccess(String message) {
+                new Handler(Looper.getMainLooper()).post(() ->
+                        Toast.makeText(getApplication(), message, Toast.LENGTH_SHORT).show()
+                );
+            }
+
+            @Override
+            public void onError(String error) {
+                new Handler(Looper.getMainLooper()).post(() ->
+                        Toast.makeText(getApplication(), error, Toast.LENGTH_LONG).show()
+                );
+            }
+        });
     }
 
 }

@@ -30,5 +30,13 @@
     <string name="change_language">Change language</string>
     <string name="spanish">Spanish</string>
     <string name="english">English</string>
+    <string name="export_import_title">Export or import movies</string>
+    <string name="btn_export">Export to CSV</string>
+    <string name="btn_import">Import from CSV</string>
+
+    <string name="import_success">Imported: %d movies</string>
+    <string name="import_error">Error importing: %s</string>
+    <string name="export_success">Export completed successfully</string>
+    <string name="export_error">Error exporting: %s</string>
 
 </resources>
