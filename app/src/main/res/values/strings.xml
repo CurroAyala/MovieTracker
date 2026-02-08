@@ -8,6 +8,7 @@
     <string name="menu_settings">Settings</string>
     <string name="click_on">Click on:</string>
     <string name="btn_delete">Delete</string>
+    <string name="msg_delete_movie">Movie deleted"</string>
 
     <string name="list_title">Movies</string>
     <string name="empty_list">No movies yet. Add one!</string>

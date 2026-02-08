@@ -8,6 +8,7 @@
     <string name="menu_settings">Ajustes</string>
     <string name="click_on">Click en:</string>
     <string name="btn_delete">Eliminar</string>
+    <string name="msg_delete_movie">Película eliminada"</string>
 
     <string name="list_title">Películas</string>
     <string name="empty_list">No hay películas todavía. ¡Añade una!</string>
